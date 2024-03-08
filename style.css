@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+:root {
+  --gradient: linear-gradient(
+    58.2deg,
+    rgba(40, 91, 212, 0.73) -3%,
+    rgba(171, 53, 163, 0.45) 49.3%,
+    rgba(255, 204, 112, 0.37) 97.7%
+  );
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+/* hapus aja kalo gak guna */
+.login {
+  height: 100vh;
+  display: flex;
+}
+
+.regis {
+  height: 100vh;
+  display: flex;
+}
+
+.loginbox {
+  display: flex;
+  justify-content: space-between;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
+  background-color: rgb(255, 255, 255);
+  /* sesuaikan dengan keinginan kalian - fungsi merubah size loginbox nya */
+  height: 40vh;
+  width: 80%;
+  /* sesuaikan dengan keinginan kalian  */
+  margin: auto;
+  align-items: center;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.4));
+  background-size: 200%;
+  background-position: left;
+  animation: gradient 2s alternate infinite;
+}
+
+/* registrasi */
+.regisbox {
+  display: flex;
+  justify-content: space-between;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
+  background-color: rgb(255, 255, 255);
+  /* sesuaikan dengan keinginan kalian - fungsi merubah size loginbox nya */
+  height: 40vh;
+  width: 80%;
+  /* sesuaikan dengan keinginan kalian  */
+  margin: auto;
+  align-items: center;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.4));
+  background-size: 200%;
+  background-position: left;
+  animation: gradient 2s alternate infinite;
+}
+
+/* Bagian Kiri */
+
+.loginitem-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+/* registrasi */
+.regisitem-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  border-radius: 0 50px 50px 0;
+  background-image: linear-gradient(
+    58.2deg,
+    rgba(255, 255, 255, 0.73) -3%,
+    rgba(255, 255, 255, 0.45) 49.3%,
+    rgba(255, 255, 255, 0.37) 97.7%
+  );
+  color: rgb(0, 0, 0);
+}
+/* registrasi */
+
+.risi1 {
+  color: #000000;
+  text-align: center;
+}
+
+.risi1 h1 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.risi1 p {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+.risi1-input {
+  display: block;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.risi1-input input {
+  margin-bottom: 10px;
+  text-align: start;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #3b4249;
+}
+
+.risi1-input input::placeholder {
+  color: white;
+}
+
+.isi1 {
+  color: white;
+  text-align: center;
+}
+
+.isi1 h1 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.isi1 p {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.isi1-input {
+  display: block;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.isi1-input input {
+  margin-bottom: 10px;
+  text-align: start;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: rgb(109, 128, 136);
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.buttonr {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonr button {
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: #5d6f74;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.button button:hover {
+  background-color: #d2d2d2;
+  color: #000000;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-icon {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.login-icon img {
+  width: 15px;
+  padding: 0 5px;
+}
+
+.line {
+  width: 40%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Bagian Kiri */
+
+/* Bagian Kanan */
+.loginitem-right {
+  height: 100%;
+  width: 50%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 0 0 50px;
+  background-image: linear-gradient(
+    58.2deg,
+    rgba(255, 255, 255, 0.73) -3%,
+    rgba(255, 255, 255, 0.45) 49.3%,
+    rgba(255, 255, 255, 0.37) 97.7%
+  );
+  color: rgb(0, 0, 0);
+}
+/* registrasi */
+.regisitem-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 0 0 50px;
+  color: rgb(255, 255, 255);
+}
+/* registrasi */
+
+.isi2 a {
+  font-size: 10px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.isi2 a:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.isi2 h1 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.isi2 p {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+.risi2 a {
+  font-size: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.risi2 a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+
+.risi2 h1 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.risi2 p {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+/* Bagiam Kanan */
+
+/* animation color gradient */
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* medque */
+@media screen and (min-width: 1024px) {
+  .loginbox {
+    height: 80vh;
+    width: 80%;
+  }
+  .regisbox {
+    height: 80vh;
+    width: 80%;
+  }
+  html {
+    font-size: 150%;
+  }
+}
